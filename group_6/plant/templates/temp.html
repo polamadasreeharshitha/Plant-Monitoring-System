@@ -1,0 +1,488 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang=""> 
+    <head>
+    
+    
+        <script src="{% static 'RGraph.common.core.js' %}" ></script>
+       <script src="{% static 'RGraph.thermometer.js' %}" ></script>
+ <script src="{% static 'RGraph.semicircularprogress.js' %}" ></script>
+	<script src= "{% static 'RGraph.common.dynamic.js' %}"></script>
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    
+    
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>WATER MANAGEMENT SYSTEM</title>
+        <meta name="description" content="">
+       <!-- <meta name="" content="width=device-width, initial-scale=1"> -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="{% static 'assets/css/animate/animate.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}" />
+
+        <script src="{% static 'assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+        
+        
+      
+    </head>
+    
+  
+    <body>
+		
+		
+		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <header id="home" class="navbar-fixed-top">
+            <div class="header_top_menu clearfix">	
+                <div class="container">
+                    <div class="row">	
+                        <div class="col-md-5 col-md-offset-3 col-sm-12 text-right">
+                            <div class="call_us_text">
+								
+							</div>
+                        </div>
+
+                     
+
+                    </div>			
+                </div>
+            </div>
+
+            <!-- End navbar-collapse-->
+
+            <div class="main_menu_bg">
+                <div class="container"> 
+                    <div class="row">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                            
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#slider">Home</a></li>
+                                        <li><a href="#abouts">About</a></li>
+                                        <li><a href="#portfolio">Weather Conditions</a></li>
+                                        <li><a href="#features">Graphs</a></li>
+                                        <li><a href="#ourPakeg">Sensors</a></li>
+                                        <li><a href="#mobaileapps">Map</a></li>
+                                 
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+            </div>	
+        </header> <!-- End Header Section -->
+ <section id="slider" class="slider">
+            <div class="slider_overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_slider text-center">
+                            <div class="col-md-12">
+                                <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
+                                    <h1>Plant monitoring system</h1>
+                                   
+                                </div>
+                            </div>	
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="abouts" class="abouts">
+            <div class="container">
+                <div class="row">
+                    <div class="abouts_content">
+                        <div class="col-md-6">
+                            <div class="single_abouts_text text-center wow slideInLeft" data-wow-duration="1s">
+                                <img src="{% static "/images/pro.jpg"%}" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="single_abouts_text wow slideInRight" data-wow-duration="1s">
+                                <h4>About Project </h4><br>
+                                
+                                <p>Our project is plant monitoring system.It helps in effective water management through automation of a plant.The microcontroller we have used is raspberry pi 3 and we have used 4 different sensors i.e DHT11(temperture and humidity sensor),LM393(raindop sensor),(soil moisture sensor)HCSR04
+                                (Ultrasonic sensor).Also there is a motor to pump the water.The project solely revolves around the idea that if the moiture content of the plant is low the motor must switch on automatically and pump enough water.</p>
+
+                               <!-- <a href="" class="btn btn-primary">click here</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <section id="portfolio" class="portfolio">
+           <!-- <div class="container">-->
+                <div class="row">
+                    <div class="portfolio_content text-center  wow fadeIn" data-wow-duration="5s">
+                        <div class="col-md-18">
+                            <div class="head_title text-center">
+                                <h4 style="color:#66ffff">WEATHER CONDITIONS</h4>
+                                
+                            </div>
+
+                          <div class="main_portfolio_content">
+                                <div class="col-sm-2 col-xs-6 single_portfolio_text">
+                                    <img style=height:290px src="{% static "/images/tem.jpg"%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>TEMPERATURE</h6>
+                                        <p class="product_price">{{tem}}</p>
+                                     
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-6 single_portfolio_text">
+                                    <img style=height:290px src="{% static "/images/hum.jpg"%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>HUMIDITY</h6>
+                                        <p class="product_price">{{hum}}</p>
+                                  
+                                    </div>								
+                                </div>
+                                <div class="col-sm-2 col-xs-6 single_portfolio_text">
+                                    <img style=height:290px src="{% static "/images/soil.jpg"%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>SOIL MOISTURE</h6>
+                                        <p class="product_price">{{mois}}</p>
+                                
+                                    </div>								
+                                </div>
+                                <div class="col-sm-2 col-xs-6 single_portfolio_text">
+                                    <img style=height:290px src="{% static "/images/rain.jpg"%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>RAINING STATUS</h6>
+                                        <p class="product_price">{{rain}}</p>
+                              
+                                    </div>								
+                                </div>
+                               <div class="col-sm-2 col-xs-6 single_portfolio_text">
+                                    <img style=height:290px src="{% static "/images/water.jpeg"%}" alt="" />
+                                    <div class="portfolio_images_overlay text-center">
+                                        <h6>WATER LEVEL</h6>
+                                        <p class="product_price">{{water}}</p>
+                                      
+                                    </div>								
+                                </div>
+                                                                				
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+           
+                                  
+                                  
+                                  
+        
+  
+        
+        
+         <section id="features" class="features">
+         
+        
+            <div class="slider_overlay">
+                <div class="container">
+                    
+                        <div class="main_features_content_area  wow fadeIn" data-wow-duration="3s">
+                        
+                        <div class="head_title text-center">
+                            <h4 style="font-size:3rem; color:#66ffff ">Graph </h4>
+                            
+                        </div>
+        
+                            
+                           <center><div id="chartContainer1" style="height: 400px; width: 70%;"></div></center>
+                                   
+                             
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourPakeg" class="ourPakeg">
+            <div class="container">
+                <div class="main_pakeg_content">
+                    <div class="row">
+                        <div class="head_title text-center">
+                            <h4  style="font-size:3rem;color:#66ffff">Sensors </h4>
+                            
+                        </div>
+
+                        <div class="single_pakeg_one text-right wow rotateInDownRight">
+                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Temperature sensor</h4>
+                                    </div><br>
+                                    <p>DHT11 is output cablibrated digital signal.i=It utilizes excusive digital signal-collecting-techinque and humidity snsing technology,assuring its relia.bility and stability .Its  sensing elements is connected wit 8 -bit singe-chip computer.The accuracy of temperature is 2% and the accuracy of humidity is+4%.</p><br><br><br><br><br><br>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="single_pakeg_two text-left wow rotateInDownLeft">
+                                  <div class="col-md-6 col-sm-8">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Soilmoisture sensor</h4>
+                                    </div><br>
+<ul>Soil moisture sensor measure the volumetric water content in soil.THe relation between the measure property and soil moisture must be clibrated and may vary depending on environmental factors such as soil type,temperature.Measuring soil moisture is important for agriculture applications to help farmers manage their irrigation system more efficiently.Knowing the exact soil moisture conditions on their fields,not only are farmers able to generally yse less water to grow  a crop ,they ae also able to increse yields and quality of the crop by improved management of sil moituw durng critical plant grwth stages.</p>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_pakeg_three text-right wow rotateInDownRight">
+                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Raindrop sensor </h4>
+                                    </div>
+                                   <br> <p> The rain sensor module is an easy tool for rain detection.It can be used as a switch when raindrop falls through the raining bord and aslso for measuring rainfall intensity.The module features,a rain board and the control that is seperate for more convience ,power indicator LED and adjustable sensitivity through potentiometer.</p> <br><br><br><br><br>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_pakeg_four text-left wow rotateInDownLeft">
+                             <div class="col-md-6 col-sm-8">                                 
+                                <div class="single_pakeg_text">
+                                    <div class="pakeg_title">
+                                        <h4>Ultrasonic sensor</h4>
+                                    </div><br>
+                                    <p>Ultrasonic sensor provides 2cm-400cm non-contact measurement function and ranging accuracy can rach upto 3mm .The basic mo principle of work is :the module automatically sends 40kHz amd detect whether there is a pluse signal back.If the signal is back,then it calculates the time from sending signal from ultrasonic to returning.</p><br><br><br><br><br>       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section id="mobaileapps" class="mobailapps">
+                        <div class="main_mobail_apps_content wow zoomIn" >
+                         <div class="head_title text-center">
+                            <h4 style="font-size:2.5rem;color:#66ffff">MAP </h4>
+                        </div>
+                       <center> <div id="map"></div></center></div>
+                       
+                        <!--<div class="row" style="display:>
+						<div class="col-lg-6" id="cv" style="padding: 60px 200px">		
+							<canvas id="cvs" width="100" height="400" >[No canvas support]</canvas>	
+						</div>
+						<div class="col-lg-6" id="cv2" style="padding: 60px">
+							<canvas id="cvs2" width="300" height="200">[No canvas support]</canvas>
+						</div>
+					</div>-->   
+                  </section>
+        <script>
+        new RGraph.Thermometer({
+            id: 'cvs',
+            min: 0,
+            max: 100,
+            value: {{tem}},
+            options: {
+                scaleVisible: true
+            }
+        }).draw();	
+	new RGraph.SemiCircularProgress({
+            id: 'cvs2',
+            min: 0,
+            max: 100,
+            value: {{hum}},
+            options: {
+                gutterTop: 10,
+                gutterLeft: 10,
+                gutterRight: 10,
+                adjustable: true,
+                unitsPost: '%',
+                textAccessiblePointerevents: false,
+                colors: ['Gradient(white:#0a0)']
+            }
+        }).draw();
+		
+		let cv = document.querySelector('#cv')
+		let cv2 = document.querySelector('#cv2')
+		cv.style.display = 'none'
+		cv2.style.display = 'none'	
+		function showHum() {
+			cv2.style.display = cv2.style.display == 'none' ? 'block' : 'none'
+		}
+		function showTemp() {
+			cv.style.display = cv.style.display == 'none' ? 'block' : 'none'
+		}
+		function toggleAll() {
+			cv.style.display = 'none'
+			cv2.style.display = 'none'
+		}
+		var app = angular.module('myApp', []);
+			app.controller('datCtrl', function($scope) {
+			$scope.today = new Date();
+		});
+		function scroll1() {
+				window.scroll({
+					top:1000, 
+					left 0, 
+					behavior: 'smooth' 
+				})
+			}
+			function scroll2() {
+				window.scroll({
+					top:550, 
+					left: 0, 
+					behavior: 'smooth' 
+				})
+			}
+			function scroll3() {
+				window.scroll({
+					top:1500, 
+					left: 0, 
+					behavior: 'smooth' 
+				})
+			}
+</script>  
+
+
+
+
+
+                            <script>
+                                    window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer1",
+	{
+		title: {
+			text: "Temperature and Humidity over a period of time"
+		},
+		axisY: {
+			includeZero: false,
+			interval: 10,
+			
+		},
+		axisX: {
+			interval: 1,
+			intervalType: "month",
+			valueFormatString: "MMM-DD",
+			labelAngle: -45
+		},		
+		data: [
+		{
+			type: "line",
+			showInLegend: true,		
+			indexLabelFontSize: 12,
+			yValueFormatString: "#0.## °C",
+			legendText: "Temperature in Celsius",
+			dataPoints: [
+				{ x: new Date(2017,9,18), y: {{tem7}}},  
+				{ x: new Date(2017,9,19), y: {{tem6}} },
+				{ x: new Date(2017,9,20), y: {{tem5}}},
+				{ x: new Date(2017,9,21), y: {{tem4}} },
+				{ x: new Date(2017,9,22), y: {{tem3}} },
+				{ x: new Date(2017,9,23), y: {{tem2}} },
+				{ x: new Date(2017,9,24), y: {{tem1}} },
+				{ x: new Date(2017,9,25), y:{{tem}}}
+			]
+		},
+          {
+            type: "line",
+			showInLegend: true,
+			indexLabelFontSize: 12,
+			legendText: "Humidity",
+			dataPoints: [
+				{ x: new Date(2017,9,18), y: {{hum7}}},  
+				{ x: new Date(2017,9,19), y: {{hum6}}},
+				{ x: new Date(2017,9,20), y: {{hum5}}},
+				{ x: new Date(2017,9,21), y: {{hum4}}},
+				{ x: new Date(2017,9,22), y: {{hum3}}},
+				{ x: new Date(2017,9,23), y: {{hum2}}},
+				{ x: new Date(2017,9,24), y: {{hum1}}},
+				{ x: new Date(2017,9,25), y:{{hum}}}  
+              ]
+          }
+		]
+	});
+	chart.render();
+}
+</script>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(13.5482,79.9996202);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 4};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    title:'Weather Station'+'\n'+'Weather-condition:0'
+});
+  marker.setMap(map);
+  var marker1 = new google.maps.Marker({
+    position: map.getCenter(),
+    icon: {
+      path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+      strokeColor:{{mois}} > 600 ? 'red' : 'green',
+      scale: 3
+    },
+    draggable: true,
+    map: map,
+    title: 'temperature:{{tem}}'+'\n'+'Humidity:{{hum}}'+'\n'+'Moisture:{{mois}}'+'\n'+'Waterlevel:{{water}}'+'\n'+'Raining Status:{{rain}}'
+  });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdjEkKqbVNdfZzkW0N6uUR3K02A75kwBE&callback=myMap" text="text/javascript"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>    
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>-->
+        <script src="{% static 'assets/js/vendor/jquery-1.11.2.min.js' %}"></script>
+        <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery-easing/jquery.easing.1.3.js' %}"></script>
+        <script src="{% static 'assets/js/wow/wow.min.js' %}"></script>
+        <script src="{% static 'assets/js/plugins.js' %}"></script>
+        <script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
+</html>
